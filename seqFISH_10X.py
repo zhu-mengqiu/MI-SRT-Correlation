@@ -9,7 +9,7 @@ import scvi
 from scvi.model import GIMVI
 
 # Prepare data
-PATH = '/CCAS/home/mzhu32/seqFISH_10X'
+PATH = 'Your work directory'
 RNA_path = PATH + '/10X.txt'
 Spatial_path = PATH + '/seqFISH.txt'
 Predict_path = PATH + '/Predict_gene.txt'
