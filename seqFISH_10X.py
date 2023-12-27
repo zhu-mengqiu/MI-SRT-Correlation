@@ -10,8 +10,8 @@ from scvi.model import GIMVI
 
 # Prepare data
 PATH = 'Your work directory'
-RNA_path = PATH + '/10X.txt'
-Spatial_path = PATH + '/seqFISH.txt'
+RNA_path = PATH + '/Your scRNA-seq dataset.txt'
+Spatial_path = PATH + '/Your SRT dataset.txt'
 Predict_path = PATH + '/Predict_gene.txt'
 Output_path = PATH
 
