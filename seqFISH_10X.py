@@ -74,5 +74,4 @@ for k in range(n_pred):
     for i in range(n_pred):
         _, imputation_mi = model.get_imputed_values(deterministic = False, normalized = False)
         mi_result = pd.DataFrame(imputation_mi[:, pred_gene_idx], columns = pred_genes)
-        mi_result.to_csv(Output_path + '/Fold_' + str(k+1) + '_MI_' + str(i+1) + '.txt', header = True, index = False, sep = '\t') 
-        
+        mi_result.to_csv(Output_path + '/Fold_' + str(k+1) + '_MI_' + str(i+1) + '.txt', header = True, index = False, sep = '\t')
