@@ -16,7 +16,7 @@ CombineCorrelation.R: This R script combines correlation matrices from multiple 
 
 ComputeMSE.R: This R script computes MSE of single imputation and multiple imputation (mean, median, fisher) for pearson, spearman, kendall correlation. The generated files are named as "MSE\_pred2pred\_[cor.method].txt".
 
-
+ComputeNetwork.R: This R script computes a similarity matrix that represents the network based on a correlation matrix for the original dataset, single imputation, and multiple imputation. The script is for both postive and negative direction but can be modified for only positive or only negative direction.
 
 
 
