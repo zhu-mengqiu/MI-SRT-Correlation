@@ -14,7 +14,9 @@ ComputeKendall.R: This R script generates correlation matrices for kendall corre
 
 CombineCorrelation.R: This R script combines correlation matrices from multiple imputations into "Fold\_[i]\_MI\_[cor.method]\_[pooling.method].txt" where i=1,...,100, cor.method=spearman, pearson, kendall, and pooling.method=mean, median, fisher.
 
-ComputeMSE.R: This R script computes MSE of single imputation and multiple imputation (mean, median, fisher) for pearson, spearman, kendall correlation.
+ComputeMSE.R: This R script computes MSE of single imputation and multiple imputation (mean, median, fisher) for pearson, spearman, kendall correlation. The generated files are named as "MSE\_pred2pred\_[cor.method].txt".
+
+
 
 
 
