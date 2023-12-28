@@ -8,9 +8,11 @@ Predict_gene.txt: We randomly select 100 sets of 35 out of the 347 genes measure
 
 seqFISH_10X.py: This python script takes the Predict_gene.txt, a scRNA_count.txt and a Insitu_count.txt as input. For single imputation, the script generates "Fold_[k]_SI.txt" for each randomly selected set of 35 genes, where k=1,..,100. For multiple imputation, the script generates "Fold_[i]_MI_[j].txt" for each set of genes and 100 random imputations, where i,j=1,...,100.
 
-ComputeCorrelation.R: This R script generates correlation matrices for original data, single imputation data, and multiple imputation data in pearson, spearman, and kendall correlation. The files are named as "Fold_[k]_Original_[cor.method].txt", "Fold_[k]_SI_[cor.method].txt", and "Fold_[i]_MI_[j]_[cor.method].txt", where k,i,j=1,...,100.
+ComputeCorrelation.R: This R script generates correlation matrices for original data, single imputation data, and multiple imputation data in pearson, spearman, and kendall correlation. The files are named as "Fold_[k]_Original_[cor.method].txt", "Fold_[k]_SI_[cor.method].txt", and "Fold_[i]_MI_[j]_[cor.method].txt", where k,i,j=1,...,100 and cor.method=spearman, pearson
 
-CombineCorrelation.R: This R script combines correlation matrices from multiple imputations into "Fold_[i]_MI_[cor.method]_[pooling.method].txt" where i=1,...,100 and pooling.method = mean, median, fisher.
+ComputeKendall.R: This R script generates correlation matrices for kendall correlation.
+
+CombineCorrelation.R: This R script combines correlation matrices from multiple imputations into "Fold_[i]_MI_[cor.method]_[pooling.method].txt" where i=1,...,100, cor.method=spearman, pearson, kendall, and pooling.method=mean, median, fisher.
 
 
  
