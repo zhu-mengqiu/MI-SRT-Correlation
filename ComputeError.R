@@ -45,6 +45,5 @@ for (k in 1:n.fold){
 
 # output path
 output.path <- paste0("Your working directory")
-
 file <- paste0(output.path, 'Error_pred2pred_b_', cor.name, '.txt')
 write.table(error.pred2pred, file, quote = F, sep = '\t', row.names = F, col.names = T)

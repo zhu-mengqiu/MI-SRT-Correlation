@@ -18,6 +18,8 @@ ComputeMSE.R: This R script computes MSE of single imputation and multiple imput
 
 ComputeNetwork.R: This R script computes a similarity matrix that represents the network based on a correlation matrix for the original dataset, single imputation, and multiple imputation. The script is for both postive and negative direction but can be modified for only positive or only negative direction.
 
+ComputeError.R: This R script computes the classification error of single imputation and multiple imputation-based network compared with the network based on observed expression values.
+
 
 
 
