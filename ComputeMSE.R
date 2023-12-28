@@ -50,7 +50,6 @@ for (k in 1:n.fold){
   }
   
   
-  
   si.mse.pred2pred <- compute.mse.pred2pred(original.cor, si.cor)
   mi.mean.mse.pred2pred <- compute.mse.pred2pred(original.cor, mi.cor.mean)
   mi.median.mse.pred2pred <- compute.mse.pred2pred(original.cor, mi.cor.median)
